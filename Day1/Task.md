@@ -24,7 +24,8 @@ sudo systemctl start nginx
 <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day1/Assets/web%20server.png" />
 
 - Only http port `80` is open
-- Custom data script is located in `/var/lib/waagent/` as `ovf-env.xml` in base-64 encoding
+- Custom data script is located in `/var/lib/waagent/` as `ovf-env.xml` in base-64 encoding.
+- Custom data script is located in `/var/lib/cloud/instance` as `user-data.txt` in regular format.
 
 <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day1/Assets/custom-script.png" />
 
