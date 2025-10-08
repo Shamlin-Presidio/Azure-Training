@@ -10,11 +10,11 @@ Extra After SSH into the VM, try to locate the file path of custom data script a
 - Created VM with the following script:
 
 ```bash
-#!bin/bash
+#!/bin/bash
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install nginx
+sudo apt install nginx -y
 
 sudo systemctl enable nginx
 sudo systemctl start nginx
