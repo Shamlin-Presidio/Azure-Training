@@ -38,3 +38,5 @@ This resource must be compliant with the assigned policy.. See error details for
 
 ## 4. Simulating connection
 Command : `nc -zv 10.2.1.4 22`
+
+<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Testing.png" />
