@@ -14,7 +14,9 @@ But, no direct connection between spoke 1 and spoke 2 <br />
 - Shamlin-Spoke-1-VM
 - Shamlin-Spoke-2-VM
 
-
+<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Hub.png" />
+<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Spoke%201.png"/>
+<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Spoke%202.png" />
 
 ## Couldnt allow ICMP to test with Ping
 The folloring error showed up
@@ -27,10 +29,12 @@ This resource must be compliant with the assigned policy.. See error details for
 ## So, I approached to test using netcat to simulate connectivity
 
 ## 3. Peering connections
-  - Spoke 1 to Hub
+  - Spoke 1 to Hub  
   - Hub to Spoke 1
   - Spoke2 to Hub
   - Hub to Spoke 2
+
+<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Peering%20connection.png" />
 
 ## 4. Simulating connection
 Command : `nc -zv 10.2.1.4 22`
