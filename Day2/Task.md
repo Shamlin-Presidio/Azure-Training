@@ -7,14 +7,14 @@ But, no direct connection between spoke 1 and spoke 2 <br />
 ## S T E P S:
 
 ## 1. Creating VNETs:
-Following
+3 VNETS each, with a new subnet in them
 
 ## 2.Creating VMs:
 - Shamlin-Hub-VM
 - Shamlin-Spoke-1-VM
 - Shamlin-Spoke-2-VM
 
-Each, with a new subnet in them
+
 
 ## Couldnt allow ICMP to test with Ping
 The folloring error showed up
