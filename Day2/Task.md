@@ -14,29 +14,28 @@ But, no direct connection between spoke 1 and spoke 2 <br />
 - Shamlin-Spoke-1-VM
 - Shamlin-Spoke-2-VM
 
-<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Hub.png" />
-<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Spoke%201.png"/>
-<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Spoke%202.png" />
-
-## Couldnt allow ICMP to test with Ping
-The folloring error showed up
-```
-Failed to create security rule Failed to create security rule 'Allow_ICMP'. Error: Resource 'Allow_ICMP' was disallowed by policy. 
-Reasons: 'This resource must be compliant with the assigned policy., 
-This resource must be compliant with the assigned policy.. See error details for policy resource IDs
-```
-
-## So, I approached to test using netcat to simulate connectivity
 
 ## 3. Peering connections
   - Spoke 1 to Hub  
-  - Hub to Spoke 1
   - Spoke2 to Hub
-  - Hub to Spoke 2
+    This created a fully synchronised links (2 way)
 
-<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Peering%20connection.png" />
 
-## 4. Simulating connection
-Command : `nc -zv 10.2.1.4 22`
+## 4. Enable IP forwarding
+  - Enabled this in Hub's Network interface
+  - And also in `/etc/sysctl.conf` file in Hub's VM
 
-<img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day2/Assets/Testing.png" />
+## 5. Route tables
+  - Created two route tables Spoke1 and Spoke2 and associated appropriately
+  - Chose **Virtual Appliance** (for next hop) and specified the destination addresses
+
+## N O T E :
+could have chosen `virtual network` if I had a multiple networks with a Gateway to route them
+
+## 6. Testing:
+
+## 7. DNS:
+  -  Created a private DNS hosted zone
+  -  Added Virtual Private Links of the Hub and 2 Spokes
+
+## 8. DNS Testing:
