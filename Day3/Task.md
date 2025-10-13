@@ -32,7 +32,8 @@ second Virtual Machine Scale Set should be configured with path /path2 and attac
 - Setup Rule and Path-based routing
   
   <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/Path.png" />
-  
+
+## OUTPUTS:
 - Path a
   
   <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/Path%20a.png" />
