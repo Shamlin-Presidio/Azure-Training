@@ -15,6 +15,7 @@ Attach the Virtual Machine Scale Set with Load Balancer.
   <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/1.2.png" />
 
 <hr />
+<hr />
 
 # TASK 2:
 ## D E S C R I P T I O N:
