@@ -8,6 +8,11 @@ Attach the Virtual Machine Scale Set with Load Balancer.
 - Created VMSS (VMSS-a) with a new VNET
 - Used 2 VMs
 - Created and attached a Load Balancer
+  <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/Load%20Balancing.png" />
+
+## OUTPUTS:
+  <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/1.1.png" />
+  <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/1.2.png" />
 
 <hr />
 
@@ -21,12 +26,18 @@ second Virtual Machine Scale Set should be configured with path /path2 and attac
 - Created another `VMSS` - (VMSS-b)
 - Created and attached a Load Balancer
 - Created an Application Gateway, pointing to the **two load balancers**
+  
+  <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/AG.png" />
+
 - Setup Rule and Path-based routing
+  
+  <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/Path.png" />
+  
 - Path a
   
-  <img src="" />
+  <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/Path%20a.png" />
   
 - Path b
     
-  <img src="" />
+  <img src="https://github.com/Shamlin-Presidio/Azure-Training/blob/main/Day3/Assets/Path%20b.png" />
   
